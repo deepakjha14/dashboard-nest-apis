@@ -50,8 +50,7 @@ export class DynamoDBService {
     }
   }
 
-  saveData({data}: any) {
-    debugger
+  saveData({data}: any) {    
     const command = new PutCommand({
       TableName: 'Students',
       Item: {
